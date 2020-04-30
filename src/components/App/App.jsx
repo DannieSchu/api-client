@@ -1,6 +1,13 @@
 import React from 'react';
+import Form from '../Form/Form';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <Form 
+    onSubmit={() => {}} 
+    onJsonChange={() => {}} 
+    onUrlChange={() => {}} 
+    onMethodChange={() => {}} 
+    url="https://history.muffinlabs.com/date" 
+    method="get" 
+    buttonText="Send" />;
 }
-  

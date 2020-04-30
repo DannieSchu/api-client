@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form matches a snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholer="URL"
+    type="text"
+    value="https://history.muffinlabs.com/date"
+  />
+  <section>
+    <div>
+      <label
+        htmlFor="get"
+      >
+        get
+      </label>
+      <input
+        checked={true}
+        id="get"
+        onChange={[Function]}
+        type="radio"
+        value="get"
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="post"
+      >
+        post
+      </label>
+      <input
+        checked={false}
+        id="post"
+        onChange={[Function]}
+        type="radio"
+        value="post"
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="put"
+      >
+        put
+      </label>
+      <input
+        checked={false}
+        id="put"
+        onChange={[Function]}
+        type="radio"
+        value="put"
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="delete"
+      >
+        delete
+      </label>
+      <input
+        checked={false}
+        id="delete"
+        onChange={[Function]}
+        type="radio"
+        value="delete"
+      />
+    </div>
+  </section>
+  <input
+    onChange={[Function]}
+    placeholer="Raw JSON Body"
+    type="text"
+  />
+  <button>
+    Send
+  </button>
+</form>
+`;
