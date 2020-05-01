@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Form from '../components/Form/Form.jsx';
+import { apiData } from '../services/apiData.jsx';
 
 const ClientPage = () => {
   const [method, setMethod] = useState('');
@@ -20,9 +21,7 @@ const ClientPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    console.log('method: ', method);
-    console.log('url: ', url);
+    apiData(url, method, json);
   };
 
   return (

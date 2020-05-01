@@ -2,7 +2,9 @@
 
 exports[`Header component renders Header 1`] = `
 <header>
-  <h1>
+  <h1
+    className="Header"
+  >
     API Client
   </h1>
 </header>
