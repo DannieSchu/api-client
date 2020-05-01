@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Form from '../components/Form/Form.jsx';
 import { apiData } from '../services/apiData.jsx';
-import ReactJson from 'react-json-view';
+import JsonDisplay from '../components/JsonDisplay/JsonDisplay.jsx';
+import styles from './ClientPage.css';
 
 const ClientPage = () => {
   const [method, setMethod] = useState('');
@@ -28,7 +29,7 @@ const ClientPage = () => {
   };
 
   return (
-    <>
+    <section className={styles.ClientPage}>
       <Form
         onSubmit={handleSubmit}
         onJsonChange={handleJsonChange}
@@ -38,11 +39,8 @@ const ClientPage = () => {
         json={json}
         method={method}
         buttonText="Send" />
-      <ReactJson src={results} theme="bright:inverted"
-        iconStyle="circle"
-        displayDataTypes={false}
-      />
-    </>
+      <JsonDisplay results={results} />
+    </section>
   );
 };
 
