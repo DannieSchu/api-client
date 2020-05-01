@@ -14,7 +14,9 @@ const Form = ({
 }) => {
   return (
     <form className={styles.Form} onSubmit={onSubmit}>
-      <h2>Request</h2>
+      <div>
+        <h2>Request</h2>
+      </div>
       <div>
         <input type="text" value={url} onChange={onUrlChange} placeholer="URL" />
         <button>{buttonText}</button>
