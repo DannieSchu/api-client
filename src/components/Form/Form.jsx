@@ -1,54 +1,59 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Form.css';
 
-const Form = ({ onSubmit, onJsonChange, onUrlChange, onMethodChange, url, json, method, buttonText = 'submit' }) => {
+const Form = ({
+  onSubmit,
+  onJsonChange,
+  onUrlChange,
+  onMethodChange,
+  url,
+  json,
+  method,
+  buttonText = 'submit'
+}) => {
   return (
-    <form onSubmit={onSubmit}>
-      <input type="text" value={url} onChange={onUrlChange} placeholer="URL" />
+    <form className={styles.Form} onSubmit={onSubmit}>
+      <h2>Request</h2>
+      <div>
+        <input type="text" value={url} onChange={onUrlChange} placeholer="URL" />
+        <button>{buttonText}</button>
+      </div>
       <section>
-        <div>
-          <label htmlFor="get">get</label>
-          <input
-            type="radio"
-            value="get"
-            id="get"
-            checked={method === 'get'}
-            onChange={onMethodChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="post">post</label>
-          <input
-            type="radio"
-            value="post"
-            id="post"
-            checked={method === 'post'}
-            onChange={onMethodChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="put">put</label>
-          <input
-            type="radio"
-            value="put"
-            id="put"
-            checked={method === 'put'}
-            onChange={onMethodChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="delete">delete</label>
-          <input
-            type="radio"
-            value="delete"
-            id="delete"
-            checked={method === 'delete'}
-            onChange={onMethodChange}
-          />
-        </div>
+        <label htmlFor="get">get</label>
+        <input
+          type="radio"
+          value="get"
+          id="get"
+          checked={method === 'get'}
+          onChange={onMethodChange}
+        />
+        <label htmlFor="post">post</label>
+        <input
+          type="radio"
+          value="post"
+          id="post"
+          checked={method === 'post'}
+          onChange={onMethodChange}
+        />
+        <label htmlFor="put">put</label>
+        <input
+          type="radio"
+          value="put"
+          id="put"
+          checked={method === 'put'}
+          onChange={onMethodChange}
+        />
+        <label htmlFor="delete">delete</label>
+        <input
+          type="radio"
+          value="delete"
+          id="delete"
+          checked={method === 'delete'}
+          onChange={onMethodChange}
+        />
       </section>
       <input type="text" value={json} onChange={onJsonChange} placeholer="Raw JSON Body" />
-      <button>{buttonText}</button>
     </form>
   );
 };
