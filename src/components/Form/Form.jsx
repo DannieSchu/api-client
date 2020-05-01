@@ -18,7 +18,7 @@ const Form = ({
         <h2>Request</h2>
       </div>
       <div>
-        <input type="text" value={url} onChange={onUrlChange} placeholer="URL" />
+        <input type="text" value={url} onChange={onUrlChange} placeholder="URL" />
         <button>{buttonText}</button>
       </div>
       <section>
@@ -55,7 +55,7 @@ const Form = ({
           onChange={onMethodChange}
         />
       </section>
-      <input type="text" value={json} onChange={onJsonChange} placeholer="Raw JSON Body" />
+      <input type="text" value={json} onChange={onJsonChange} placeholder="Raw JSON Body" />
     </form>
   );
 };

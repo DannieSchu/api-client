@@ -1,18 +1,11 @@
 import React from 'react';
-import Form from '../Form/Form';
 import Header from '../Header/Header';
+import ClientPage from '../../containers/ClientPage';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Form
-        onSubmit={() => { }}
-        onJsonChange={() => { }}
-        onUrlChange={() => { }}
-        onMethodChange={() => { }}
-        url="https://history.muffinlabs.com/date"
-        method="get"
-        buttonText="Send" />;
+      <ClientPage />
     </>);
 }

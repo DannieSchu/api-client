@@ -3,15 +3,6 @@
 exports[`App component renders App 1`] = `
 <Fragment>
   <Header />
-  <Form
-    buttonText="Send"
-    method="get"
-    onJsonChange={[Function]}
-    onMethodChange={[Function]}
-    onSubmit={[Function]}
-    onUrlChange={[Function]}
-    url="https://history.muffinlabs.com/date"
-  />
-  ;
+  <ClientPage />
 </Fragment>
 `;
