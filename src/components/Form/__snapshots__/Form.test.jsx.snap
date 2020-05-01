@@ -12,6 +12,7 @@ exports[`Form matches a snapshot 1`] = `
   </div>
   <div>
     <input
+      name="url"
       onChange={[Function]}
       placeholder="URL"
       type="text"
@@ -30,6 +31,7 @@ exports[`Form matches a snapshot 1`] = `
     <input
       checked={true}
       id="get"
+      name="method"
       onChange={[Function]}
       type="radio"
       value="get"
@@ -42,6 +44,7 @@ exports[`Form matches a snapshot 1`] = `
     <input
       checked={false}
       id="post"
+      name="method"
       onChange={[Function]}
       type="radio"
       value="post"
@@ -54,6 +57,7 @@ exports[`Form matches a snapshot 1`] = `
     <input
       checked={false}
       id="put"
+      name="method"
       onChange={[Function]}
       type="radio"
       value="put"
@@ -66,12 +70,14 @@ exports[`Form matches a snapshot 1`] = `
     <input
       checked={false}
       id="delete"
+      name="method"
       onChange={[Function]}
       type="radio"
       value="delete"
     />
   </section>
   <textarea
+    name="body"
     onChange={[Function]}
     placeholder="Raw JSON Body"
     type="text"

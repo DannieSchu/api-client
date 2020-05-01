@@ -4,11 +4,9 @@ import styles from './Form.css';
 
 const Form = ({
   onSubmit,
-  onJsonChange,
-  onUrlChange,
-  onMethodChange,
+  onChange,
   url,
-  json,
+  body,
   method,
   buttonText = 'submit'
 }) => {
@@ -18,54 +16,62 @@ const Form = ({
         <h2>Request</h2>
       </div>
       <div>
-        <input type="text" value={url} onChange={onUrlChange} placeholder="URL" />
+        <input 
+          type="text" 
+          name="url"
+          value={url} 
+          onChange={onChange} 
+          placeholder="URL" />
         <button>{buttonText}</button>
       </div>
       <section>
         <label htmlFor="get">get</label>
         <input
           type="radio"
+          name="method"
           value="get"
           id="get"
           checked={method === 'get'}
-          onChange={onMethodChange}
-        />
+          onChange={onChange} />
         <label htmlFor="post">post</label>
         <input
           type="radio"
+          name="method"
           value="post"
           id="post"
           checked={method === 'post'}
-          onChange={onMethodChange}
-        />
+          onChange={onChange} />
         <label htmlFor="put">put</label>
         <input
           type="radio"
+          name="method"
           value="put"
           id="put"
           checked={method === 'put'}
-          onChange={onMethodChange}
-        />
+          onChange={onChange} />
         <label htmlFor="delete">delete</label>
         <input
           type="radio"
+          name="method"
           value="delete"
           id="delete"
           checked={method === 'delete'}
-          onChange={onMethodChange}
-        />
+          onChange={onChange} />
       </section>
-      <textarea type="text" value={json} onChange={onJsonChange} placeholder="Raw JSON Body" />
+      <textarea 
+        type="text" 
+        name="body"
+        value={body} 
+        onChange={onChange} 
+        placeholder="Raw JSON Body" />
     </form>
   );
 };
 
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  onJsonChange: PropTypes.func.isRequired,
-  onUrlChange: PropTypes.func.isRequired,
-  onMethodChange: PropTypes.func.isRequired,
-  json: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  body: PropTypes.string,
   url: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
   buttonText: PropTypes.string,

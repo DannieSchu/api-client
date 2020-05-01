@@ -7,9 +7,7 @@ describe('Form', () => {
     const wrapper = shallow(
       <Form
         onSubmit={() => {}}
-        onJsonChange={() => {}}
-        onUrlChange={() => {}}
-        onMethodChange={() => {}}
+        onChange={() => {}}
         url="https://history.muffinlabs.com/date"
         method="get"
         buttonText="Send" />

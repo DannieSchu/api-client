@@ -7,24 +7,18 @@ import styles from './ClientPage.css';
 const ClientPage = () => {
   const [method, setMethod] = useState('');
   const [url, setUrl] = useState('');
-  const [json, setJson] = useState(null);
+  const [body, setBody] = useState(null);
   const [results, setResults] = useState(null);
 
-  const handleUrlChange = ({ target }) => {
-    setUrl(target.value);
-  };
-
-  const handleJsonChange = ({ target }) => {
-    setJson(target.value);
-  };
-
-  const handleMethodChange = ({ target }) => {
-    setMethod(target.value);
+  const handleChange = ({ target }) => {
+    if(target.name === 'method') setMethod(target.value);
+    if(target.name === 'url') setUrl(target.value);
+    if(target.value && target.name === 'body') setBody(target.value);
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    apiData(url, method, json)
+    apiData(url, method, body)
       .then(res => setResults(res));
   };
 
@@ -32,11 +26,9 @@ const ClientPage = () => {
     <section className={styles.ClientPage}>
       <Form
         onSubmit={handleSubmit}
-        onJsonChange={handleJsonChange}
-        onUrlChange={handleUrlChange}
-        onMethodChange={handleMethodChange}
+        onChange={handleChange}
         url={url}
-        json={json}
+        body={body}
         method={method}
         buttonText="Send" />
       <JsonDisplay results={results} />
