@@ -10,7 +10,7 @@ const JsonDisplay = ({ results }) => {
         src={results} 
         // theme="summerfruit:inverted"
         theme={{
-          base00: '#fdfafa',
+          base00: '#f5f1f1',
           base01: '#ec66d6',
           base02: '#a3e053',
           base03: '#a3e053',
@@ -20,7 +20,7 @@ const JsonDisplay = ({ results }) => {
           base07: '#444',
           base08: '#444',
           base09: '#08b699',
-          base0A: '#fdfafa',
+          base0A: '#f5f1f1',
           base0B: '#a3e053',
           base0C: '#a3e053',
           base0D: '#a3e053',

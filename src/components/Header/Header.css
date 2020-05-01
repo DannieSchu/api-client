@@ -1,9 +1,8 @@
 .Header {
-  box-sizing: border-box;
   text-align: center;
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(73, 73, 73);
   color: white;
   font-family: sans-serif;
-  margin: 0;
-  padding: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }

@@ -1,9 +1,8 @@
 .JsonDisplay {
-  div {
-    width: 76vw;
-  }
-  /* div.pretty-json-container {
-    border: 5px solid rgb(180, 180, 180);
-    padding: 1em
-  } */
+  width: 73%;
+  height: 15rem;
+  border: 1px solid rgb(177, 172, 172);
+  background-color: #f5f1f1;
+  padding: 1rem;
+  overflow: scroll;
 }

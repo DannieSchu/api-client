@@ -55,7 +55,7 @@ const Form = ({
           onChange={onMethodChange}
         />
       </section>
-      <input type="text" value={json} onChange={onJsonChange} placeholder="Raw JSON Body" />
+      <textarea type="text" value={json} onChange={onJsonChange} placeholder="Raw JSON Body" />
     </form>
   );
 };

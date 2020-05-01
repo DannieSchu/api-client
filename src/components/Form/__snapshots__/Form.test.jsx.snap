@@ -71,7 +71,7 @@ exports[`Form matches a snapshot 1`] = `
       value="delete"
     />
   </section>
-  <input
+  <textarea
     onChange={[Function]}
     placeholder="Raw JSON Body"
     type="text"
