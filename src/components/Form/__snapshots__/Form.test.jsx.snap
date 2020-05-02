@@ -5,11 +5,9 @@ exports[`Form matches a snapshot 1`] = `
   className="Form"
   onSubmit={[Function]}
 >
-  <div>
-    <h2>
-      Request
-    </h2>
-  </div>
+  <h2>
+    Request
+  </h2>
   <div>
     <input
       name="url"
@@ -23,11 +21,6 @@ exports[`Form matches a snapshot 1`] = `
     </button>
   </div>
   <section>
-    <label
-      htmlFor="get"
-    >
-      get
-    </label>
     <input
       checked={true}
       id="get"
@@ -37,9 +30,9 @@ exports[`Form matches a snapshot 1`] = `
       value="get"
     />
     <label
-      htmlFor="post"
+      htmlFor="get"
     >
-      post
+      get
     </label>
     <input
       checked={false}
@@ -50,9 +43,9 @@ exports[`Form matches a snapshot 1`] = `
       value="post"
     />
     <label
-      htmlFor="put"
+      htmlFor="post"
     >
-      put
+      post
     </label>
     <input
       checked={false}
@@ -63,9 +56,9 @@ exports[`Form matches a snapshot 1`] = `
       value="put"
     />
     <label
-      htmlFor="delete"
+      htmlFor="put"
     >
-      delete
+      put
     </label>
     <input
       checked={false}
@@ -75,6 +68,11 @@ exports[`Form matches a snapshot 1`] = `
       type="radio"
       value="delete"
     />
+    <label
+      htmlFor="delete"
+    >
+      delete
+    </label>
   </section>
   <textarea
     name="body"
