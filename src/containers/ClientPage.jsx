@@ -7,18 +7,22 @@ import styles from './ClientPage.css';
 const ClientPage = () => {
   const [method, setMethod] = useState('');
   const [url, setUrl] = useState('');
-  const [body, setBody] = useState(null);
+  const [body, setBody] = useState('');
   const [results, setResults] = useState(null);
 
   const handleChange = ({ target }) => {
     if(target.name === 'method') setMethod(target.value);
     if(target.name === 'url') setUrl(target.value);
-    if(target.value && target.name === 'body') setBody(target.value);
+    if(target.name === 'body') setBody(target.value);
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    apiData(url, method, body)
+    let headers;
+    if(method === 'post' || method === 'put') headers = {
+      'Content-type': 'application/json; charset=UTF-8'
+    };
+    apiData(url, method, body, headers)
       .then(res => setResults(res));
   };
 

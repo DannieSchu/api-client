@@ -1,18 +1,8 @@
-export const apiData = (url, method, body) => {
+export const apiData = (url, method, body, headers) => {
   return fetch(url, {
     method,
-    body
+    body: method === 'post' || method === 'put' ? body.replace(/(\r\n|\n|\r)/gm, ' ').trim() : null,
+    headers
   })
-    .then(response => response.json())
-    .then(json => console.log(json));
+    .then(response => response.json());
 };
-//   return fetch(url, {
-//     method,
-//     body: JSON.stringify(body),
-//     headers: {
-//       'Content-type': 'application/json; charset=UTF-8'
-//     }
-//   })
-//     .then(response => response.json())
-//     .then(json => console.log(json));
-// };
