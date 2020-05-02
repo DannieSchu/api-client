@@ -62,6 +62,19 @@ exports[`Form matches a snapshot 1`] = `
     </label>
     <input
       checked={false}
+      id="patch"
+      name="method"
+      onChange={[Function]}
+      type="radio"
+      value="patch"
+    />
+    <label
+      htmlFor="patch"
+    >
+      patch
+    </label>
+    <input
+      checked={false}
       id="delete"
       name="method"
       onChange={[Function]}

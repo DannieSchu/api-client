@@ -50,6 +50,14 @@ const Form = ({
         <input
           type="radio"
           name="method"
+          value="patch"
+          id="patch"
+          checked={method === 'patch'}
+          onChange={onChange} />
+        <label htmlFor="patch">patch</label>
+        <input
+          type="radio"
+          name="method"
           value="delete"
           id="delete"
           checked={method === 'delete'}
