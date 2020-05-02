@@ -1,3 +1,17 @@
+.tealButton {
+  background-color: rgb(62, 200, 177);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-radius: .3rem;
+  border: none;
+  height: 3rem;
+  width: 7.5rem;
+  margin-left: 3em;
+  box-shadow: 3px 3px 5px 1px #ccc;
+}
+
 .Form {  
   display: flex;
   flex-direction: column;
@@ -66,20 +80,6 @@
     label:last-of-type {
       margin-right: 0;
     }
-
-  button {
-    background-color: rgb(62, 200, 177);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    border-radius: .3rem;
-    border: none;
-    height: 3rem;
-    width: 7.5rem;
-    margin-left: 3em;
-    box-shadow: 3px 3px 5px 1px #ccc;
-  }
 
   button:hover {
     background-color: #08b699;

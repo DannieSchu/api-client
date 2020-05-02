@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactJson from 'react-json-view';
 import styles from './JsonDisplay.css';
+import PropTypes from 'prop-types';
 
 const JsonDisplay = ({ results }) => {
   return (
@@ -36,6 +37,10 @@ const JsonDisplay = ({ results }) => {
       </article>
     </section >
   );
+};
+
+JsonDisplay.propTypes = {
+  results: PropTypes.any
 };
 
 export default JsonDisplay;

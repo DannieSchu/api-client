@@ -4,7 +4,7 @@ import styles from './Header.css';
 const Header = () => {
   return (
     <header>
-      <i className="fas fa-server"></i>
+      <i className="fas fa-server" />
       <h1 className={styles.Header}>API Client</h1>
     </header>
   );

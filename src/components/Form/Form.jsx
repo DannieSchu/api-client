@@ -20,7 +20,7 @@ const Form = ({
           value={url} 
           onChange={onChange} 
           placeholder="URL" />
-        <button>{buttonText}</button>
+        <button className={styles.tealButton}>{buttonText}</button>
       </div>
       <section>
         <input
