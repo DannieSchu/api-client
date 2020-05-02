@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3e3;
+  color: rgb(70, 70, 70);
+  margin: 0 auto;
+  font-family: 'Source Code Pro', monospace;  
+  font-weight: 300;
+}
