@@ -12,9 +12,7 @@ const Form = ({
 }) => {
   return (
     <form className={styles.Form} onSubmit={onSubmit}>
-      <div>
-        <h2>Request</h2>
-      </div>
+      <h2>Request</h2>
       <div>
         <input 
           type="text" 
@@ -25,7 +23,6 @@ const Form = ({
         <button>{buttonText}</button>
       </div>
       <section>
-        <label htmlFor="get">get</label>
         <input
           type="radio"
           name="method"
@@ -33,7 +30,7 @@ const Form = ({
           id="get"
           checked={method === 'get'}
           onChange={onChange} />
-        <label htmlFor="post">post</label>
+        <label htmlFor="get">get</label>
         <input
           type="radio"
           name="method"
@@ -41,7 +38,7 @@ const Form = ({
           id="post"
           checked={method === 'post'}
           onChange={onChange} />
-        <label htmlFor="put">put</label>
+        <label htmlFor="post">post</label>
         <input
           type="radio"
           name="method"
@@ -49,7 +46,7 @@ const Form = ({
           id="put"
           checked={method === 'put'}
           onChange={onChange} />
-        <label htmlFor="delete">delete</label>
+        <label htmlFor="put">put</label>
         <input
           type="radio"
           name="method"
@@ -57,6 +54,7 @@ const Form = ({
           id="delete"
           checked={method === 'delete'}
           onChange={onChange} />
+        <label htmlFor="delete">delete</label>
       </section>
       <textarea 
         type="text" 
