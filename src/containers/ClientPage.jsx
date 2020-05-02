@@ -18,11 +18,7 @@ const ClientPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    let headers;
-    if(method === 'post' || method === 'put') headers = {
-      'Content-type': 'application/json; charset=UTF-8'
-    };
-    apiData(url, method, body, headers)
+    apiData(url, method, body)
       .then(res => setResults(res));
   };
 
