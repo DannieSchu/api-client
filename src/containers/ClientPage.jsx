@@ -40,10 +40,11 @@ const ClientPage = () => {
     localStorage.setItem('requests', JSON.stringify(requests));
   };
 
-  const handleClick = request => {
-    setUrl(request.url);
-    setMethod(request.method);
-    setBody(request.body || null);
+  const handleClick = ({ url, method, body }) => {
+    setUrl(url);
+    setMethod(method);
+    setBody(body || null);
+    setResults(null);
   };
 
   return (

@@ -7,7 +7,7 @@ import styles from './RequestHistory.css';
 const RequestHistory = ({ requests, onClick }) => {
   const requestElements = requests.map(request => (
     <li key={weakKey(request)}>
-      <RequestItem {...request} onClick={onClick} />
+      <RequestItem {...request} onClick={() => onClick(request)} />
     </li>
   ));
 
