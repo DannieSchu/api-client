@@ -1,0 +1,15 @@
+.RequestItem {
+  cursor: pointer;
+  height: 9em;
+  vertical-align: middle;
+  width: 30em;
+  padding: 1rem 2rem;
+  border-radius: .3rem;
+  background-color: rgb(180, 180, 180);
+  box-shadow: 3px 3px 5px 1px #ccc;
+
+  h3 {
+    text-transform: uppercase;
+    color: white;
+  }
+}
