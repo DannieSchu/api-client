@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RequestItem from './RequestItem.jsx';
-import styles from './RequestHistory.css';
 import { weakKey } from '../../services/weakKey.jsx';
+import styles from './RequestHistory.css';
 
 const RequestHistory = ({ requests }) => {
   const requestElements = requests.map(request => (
