@@ -1,10 +1,10 @@
 .Header {
-  background-color: rgb(73, 73, 73);
+  /*background-color: rgb(73, 73, 73);*/
+  background-color: #ee26cd;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   margin: 0 auto;
-  padding: 1.1rem 3rem;
+  padding: 1.1rem 5rem;
   font-size: 3.1rem;
-
 }

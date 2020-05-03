@@ -1,0 +1,29 @@
+.RequestHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100vh;
+  
+  li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 1rem 0;
+    height: 8em;
+    vertical-align: middle;
+    width: 35em;
+    padding: .3rem 1.5rem;
+    border-radius: .3rem;
+    background-color: rgb(180, 180, 180);
+    box-shadow: 3px 3px 5px 1px #ccc;
+  }
+
+  li:hover {
+    background-color: #a3e053;
+    background-color: #3ec8b1;
+  }
+  
+  li:active {
+    background-color: #08b699;
+  }
+}

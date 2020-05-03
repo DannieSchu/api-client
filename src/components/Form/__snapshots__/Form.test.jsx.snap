@@ -5,9 +5,11 @@ exports[`Form matches a snapshot 1`] = `
   className="Form"
   onSubmit={[Function]}
 >
-  <h2>
-    Request
-  </h2>
+  <div>
+    <h2>
+      Request
+    </h2>
+  </div>
   <div>
     <input
       name="url"
@@ -16,7 +18,9 @@ exports[`Form matches a snapshot 1`] = `
       type="text"
       value="https://history.muffinlabs.com/date"
     />
-    <button>
+    <button
+      className="tealButton"
+    >
       Send
     </button>
   </div>
