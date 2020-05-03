@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequestHistory matches a snapshot 1`] = `
+<ul
+  className="RequestHistory"
+>
+  <li
+    key="weak-key-0"
+  >
+    <RequestItem
+      method="post"
+      url="https://jsonplaceholder.typicode.com/posts"
+    />
+  </li>
+  <li
+    key="weak-key-1"
+  >
+    <RequestItem
+      method="get"
+      url="https://jsonplaceholder.typicode.com/posts"
+    />
+  </li>
+  <li
+    key="weak-key-2"
+  >
+    <RequestItem
+      method="put"
+      url="https://jsonplaceholder.typicode.com/posts"
+    />
+  </li>
+  <li
+    key="weak-key-3"
+  >
+    <RequestItem
+      method="put"
+      url="https://jsonplaceholder.typicode.com/posts"
+    />
+  </li>
+</ul>
+`;

@@ -2,9 +2,33 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <RequestItem
-    method="post"
-    url="https://jsonplaceholder.typicode.com/posts"
-  />
+  <Header />
+  <section
+    className="App"
+  >
+    <ClientPage />
+    <RequestHistory
+      requests={
+        Array [
+          Object {
+            "method": "post",
+            "url": "https://jsonplaceholder.typicode.com/posts",
+          },
+          Object {
+            "method": "get",
+            "url": "https://jsonplaceholder.typicode.com/posts",
+          },
+          Object {
+            "method": "put",
+            "url": "https://jsonplaceholder.typicode.com/posts",
+          },
+          Object {
+            "method": "put",
+            "url": "https://jsonplaceholder.typicode.com/posts",
+          },
+        ]
+      }
+    />
+  </section>
 </Fragment>
 `;
