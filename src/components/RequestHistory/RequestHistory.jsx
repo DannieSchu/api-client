@@ -19,7 +19,7 @@ const RequestHistory = ({ requests, onClick }) => {
 };
 
 RequestHistory.propTypes = {
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
   requests: PropTypes.arrayOf(PropTypes.shape({
     method: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
