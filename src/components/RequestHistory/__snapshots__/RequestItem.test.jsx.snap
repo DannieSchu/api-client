@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequestItem matches a snapshot 1`] = `
+<section
+  className="RequestItem"
+>
+  <h3>
+    post
+  </h3>
+  <p>
+    https://jsonplaceholder.typicode.com/posts
+  </p>
+</section>
+`;
