@@ -9,10 +9,10 @@
     cursor: pointer;
     list-style-type: none;
     margin: 1rem 0;
-    height: 8em;
+    height: 6em;
     vertical-align: middle;
-    width: 35em;
-    padding: .3rem 1.5rem;
+    width: 28em;
+    padding: 1rem 1.5rem;
     border-radius: .3rem;
     background-color: rgb(180, 180, 180);
     box-shadow: 3px 3px 5px 1px #ccc;
