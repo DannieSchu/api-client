@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from '../components/Form/Form.jsx';
 import JsonDisplay from '../components/JsonDisplay/JsonDisplay.jsx';
 import RequestHistory from '../components/RequestHistory/RequestHistory.jsx';
@@ -12,6 +12,11 @@ const ClientPage = () => {
   const [results, setResults] = useState(null);
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const storage = JSON.parse(localStorage.getItem('requests'));
+    if(storage) setRequests(storage);
+  }, []);
 
   const handleChange = ({ target }) => {
     if(target.name === 'method') setMethod(target.value);
@@ -32,11 +37,10 @@ const ClientPage = () => {
         body: body || null
       }
     ]));
+    localStorage.setItem('requests', JSON.stringify(requests));
   };
 
   const handleClick = request => {
-    // store an item's id
-    // find item by its id in requests array
     setUrl(request.url);
     setMethod(request.method);
     setBody(request.body || null);
