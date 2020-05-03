@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './RequestItem.css';
 
-const RequestItem = ({ method, url }) => {
+const RequestItem = ({ method, url, onClick }) => {
   return (
-    <section className={styles.RequestItem}>
+    <section className={styles.RequestItem} onClick={onClick}>
       <h3>{method}</h3>
       <p>{url}</p>
     </section>
@@ -13,7 +13,8 @@ const RequestItem = ({ method, url }) => {
 
 RequestItem.propTypes = {
   method: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default RequestItem;

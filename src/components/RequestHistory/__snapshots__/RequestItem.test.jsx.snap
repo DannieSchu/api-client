@@ -3,6 +3,7 @@
 exports[`RequestItem matches a snapshot 1`] = `
 <section
   className="RequestItem"
+  onClick={[Function]}
 >
   <h3>
     post

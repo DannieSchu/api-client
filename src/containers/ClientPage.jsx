@@ -20,9 +20,25 @@ const ClientPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
     apiData(url, method, body)
       .then(res => setResults(res));
+
+    setRequests(prevRequests => ([
+      ...prevRequests,
+      {
+        url,
+        method,
+        body
+      }
+    ]));
   };
+
+  // const handleClick = ({ target }) => {
+  //   setUrl(target.url);
+  //   setMethod(target.method);
+  //   setBody(target.body || null);
+  // };
 
   return (
     <section className={styles.ClientPage}>
