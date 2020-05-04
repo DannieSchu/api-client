@@ -51,7 +51,6 @@ const ClientPage = () => {
     setMethod(method);
     setBody(body || null);
     setResults(null);
-
   };
 
   const handleDelete = () => {

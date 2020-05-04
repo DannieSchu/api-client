@@ -8,9 +8,9 @@
   border: none;
   height: 2.5rem;
   width: 10rem;
-  margin-left: 3em;
   box-shadow: 3px 3px 5px 1px #ccc;
   margin-top: 2rem;
+  letter-spacing: 0.02rem;
 }
 
 .RequestHistory {
@@ -22,6 +22,14 @@
   
   button, li {
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #3ec8b1;
+  }
+
+  h3 {
+    font-weight: 300;
   }
 
   li {
@@ -39,10 +47,10 @@
 
   li:hover {
     background-color: #a3e053;
-    background-color: #3ec8b1;
   }
   
   li:active {
     background-color: #08b699;
+    background-color: #3ec8b1;
   }
 }
