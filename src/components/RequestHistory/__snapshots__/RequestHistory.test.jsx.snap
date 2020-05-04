@@ -40,5 +40,11 @@ exports[`RequestHistory matches a snapshot 1`] = `
       url="https://jsonplaceholder.typicode.com/posts"
     />
   </li>
+  <button
+    className="tealButton"
+    onClick={[Function]}
+  >
+    Clear History
+  </button>
 </ul>
 `;

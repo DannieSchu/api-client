@@ -19,7 +19,7 @@ describe('RequestHistory', () => {
     }];
 
     const wrapper = shallow(
-      <RequestHistory requests={requests} onClick={() => {}}/>
+      <RequestHistory requests={requests} onClick={() => {}}onDelete={() => {}} />
     );
     expect(wrapper).toMatchSnapshot();
   });

@@ -51,6 +51,12 @@ const ClientPage = () => {
     setMethod(method);
     setBody(body || null);
     setResults(null);
+
+  };
+
+  const handleDelete = () => {
+    localStorage.clear();
+    setRequests([]);
   };
 
   return (
@@ -65,7 +71,7 @@ const ClientPage = () => {
           buttonText="Send" />
         <JsonDisplay results={results} loading={loading} />
       </section>
-      <RequestHistory requests={requests} onClick={handleClick} />
+      {requests && <RequestHistory requests={requests} onClick={handleClick} onDelete={handleDelete} />}
     </section>
   );
 };
