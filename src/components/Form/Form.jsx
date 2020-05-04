@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { RadioButton } from './RadioButton.jsx';
+import { RadioButtonGroup } from './RadioButtonGroup.jsx';
 import styles from './Form.css';
 
 const Form = ({
@@ -7,8 +9,7 @@ const Form = ({
   onChange,
   url,
   body,
-  method,
-  buttonText = 'submit'
+  buttonText = 'Submit'
 }) => {
   return (
     <form className={styles.Form} onSubmit={onSubmit}>
@@ -16,61 +17,28 @@ const Form = ({
         <h2>Request</h2>
       </div>
       <div>
-        <input 
-          type="text" 
+        <input
+          type="text"
           name="url"
-          value={url} 
-          onChange={onChange} 
+          value={url}
+          onChange={onChange}
           placeholder="URL" />
         <button className={styles.tealButton}>{buttonText}</button>
       </div>
       <section>
-        <input
-          type="radio"
-          name="method"
-          value="get"
-          id="get"
-          checked={method === 'get'}
-          onChange={onChange} />
-        <label htmlFor="get">get</label>
-        <input
-          type="radio"
-          name="method"
-          value="post"
-          id="post"
-          checked={method === 'post'}
-          onChange={onChange} />
-        <label htmlFor="post">post</label>
-        <input
-          type="radio"
-          name="method"
-          value="put"
-          id="put"
-          checked={method === 'put'}
-          onChange={onChange} />
-        <label htmlFor="put">put</label>
-        <input
-          type="radio"
-          name="method"
-          value="patch"
-          id="patch"
-          checked={method === 'patch'}
-          onChange={onChange} />
-        <label htmlFor="patch">patch</label>
-        <input
-          type="radio"
-          name="method"
-          value="delete"
-          id="delete"
-          checked={method === 'delete'}
-          onChange={onChange} />
-        <label htmlFor="delete">delete</label>
+        <RadioButtonGroup name="method" onChange={onChange}>
+          <RadioButton value="get" />
+          <RadioButton value="post" />
+          <RadioButton value="put" />
+          <RadioButton value="patch" />
+          <RadioButton value="delete" />
+        </RadioButtonGroup>
       </section>
-      <textarea 
-        type="text" 
+      <textarea
+        type="text"
         name="body"
-        value={body} 
-        onChange={onChange} 
+        value={body}
+        onChange={onChange}
         placeholder="Raw JSON Body" />
     </form>
   );
@@ -81,7 +49,6 @@ Form.propTypes = {
   onChange: PropTypes.func.isRequired,
   body: PropTypes.string,
   url: PropTypes.string.isRequired,
-  method: PropTypes.string.isRequired,
   buttonText: PropTypes.string,
 };
 

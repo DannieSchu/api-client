@@ -66,7 +66,6 @@ const ClientPage = () => {
           onChange={handleChange}
           url={url}
           body={body}
-          method={method}
           buttonText="Send" />
         <JsonDisplay results={results} loading={loading} />
       </section>

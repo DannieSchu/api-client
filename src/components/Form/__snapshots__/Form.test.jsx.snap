@@ -25,71 +25,26 @@ exports[`Form matches a snapshot 1`] = `
     </button>
   </div>
   <section>
-    <input
-      checked={true}
-      id="get"
+    <RadioButtonGroup
       name="method"
       onChange={[Function]}
-      type="radio"
-      value="get"
-    />
-    <label
-      htmlFor="get"
     >
-      get
-    </label>
-    <input
-      checked={false}
-      id="post"
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="post"
-    />
-    <label
-      htmlFor="post"
-    >
-      post
-    </label>
-    <input
-      checked={false}
-      id="put"
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="put"
-    />
-    <label
-      htmlFor="put"
-    >
-      put
-    </label>
-    <input
-      checked={false}
-      id="patch"
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="patch"
-    />
-    <label
-      htmlFor="patch"
-    >
-      patch
-    </label>
-    <input
-      checked={false}
-      id="delete"
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="delete"
-    />
-    <label
-      htmlFor="delete"
-    >
-      delete
-    </label>
+      <RadioButton
+        value="get"
+      />
+      <RadioButton
+        value="post"
+      />
+      <RadioButton
+        value="put"
+      />
+      <RadioButton
+        value="patch"
+      />
+      <RadioButton
+        value="delete"
+      />
+    </RadioButtonGroup>
   </section>
   <textarea
     name="body"
