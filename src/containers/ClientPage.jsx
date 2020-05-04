@@ -30,13 +30,19 @@ const ClientPage = () => {
     apiData(url, method, body)
       .then(res => setResults(res))
       .then(() => setLoading(false));
-    setRequests(prevRequests => ([
-      ...prevRequests, {
-        url,
-        method,
-        body: body || null
+    setRequests(prevRequests => {
+      if(prevRequests.filter(request => request.url === url && request.method === method).length < 1) {
+        return [
+          ...prevRequests, {
+            url,
+            method,
+            body: body || null
+          }
+        ];
+      } else {
+        return prevRequests;
       }
-    ]));
+    });
     localStorage.setItem('requests', JSON.stringify(requests));
   };
 
