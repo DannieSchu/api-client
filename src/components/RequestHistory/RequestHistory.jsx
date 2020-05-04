@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RequestItem from './RequestItem.jsx';
-import { weakKey } from '../../services/weakKey.jsx';
+import { weakKey } from '../../utilities/weakKey.jsx';
 import styles from './RequestHistory.css';
 
 const RequestHistory = ({ requests, onClick, onDelete }) => {
