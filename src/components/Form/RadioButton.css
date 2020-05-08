@@ -4,10 +4,6 @@
   }
 
   input[type="radio"]:checked + label {
-    background-color: #fdfafa;
-    background-color: #08b699;
-    background-color: #a3e053;
-    background-color: #ec66d6;
     background-color: #ee26cd;
 }
 
@@ -31,5 +27,4 @@
     background-color: rgb(180, 180, 180);
     cursor: pointer;
   }
-
 }

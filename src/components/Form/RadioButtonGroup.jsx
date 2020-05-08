@@ -8,6 +8,7 @@ export const RadioButtonGroup = ({ name, onChange, children }) => {
       onChange
     });
   });
+  
   return (
     <>
       {radioButtonsWithNameAndOnChange}

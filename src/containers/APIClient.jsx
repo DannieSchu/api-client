@@ -3,9 +3,9 @@ import Form from '../components/Form/Form.jsx';
 import JsonDisplay from '../components/JsonDisplay/JsonDisplay.jsx';
 import RequestHistory from '../components/RequestHistory/RequestHistory.jsx';
 import { apiData } from '../services/apiData.jsx';
-import styles from './ClientPage.css';
+import styles from './APIClient.css';
 
-const ClientPage = () => {
+const APIClient = () => {
   const [method, setMethod] = useState('get');
   const [url, setUrl] = useState('');
   const [body, setBody] = useState('');
@@ -18,26 +18,29 @@ const ClientPage = () => {
     if(storage) setRequests(storage);
   }, []);
 
-  const handleChange = ({ target }) => {
-    if(target.name === 'method') setMethod(target.value);
-    if(target.name === 'url') setUrl(target.value);
-    if(target.name === 'body') setBody(target.value);
+  const stateFactory = {
+    method: setMethod,
+    url: setUrl,
+    body: setBody
   };
+
+  const handleChange = ({ target }) => stateFactory[target.name](target.value);
 
   const handleSubmit = e => {
     e.preventDefault();
     setLoading(true);
     apiData(url, method, body)
-      .then(res => setResults(res))
-      .then(() => setLoading(false));
+      .then(res => {
+        setResults(res),
+        setLoading(false);
+      });
     setRequests(prevRequests => {
       if(prevRequests.filter(request => request.url === url && request.method === method).length < 1) {
-        return [
-          ...prevRequests, {
-            url,
-            method,
-            body: body || null
-          }
+        return [{
+          url,
+          method,
+          body: body || null
+        }, ...prevRequests,
         ];
       } else {
         return prevRequests;
@@ -59,7 +62,7 @@ const ClientPage = () => {
   };
 
   return (
-    <section className={styles.ClientPage}>
+    <section className={styles.APIClient}>
       <section className={styles.FormContainer}>
         <Form
           onSubmit={handleSubmit}
@@ -74,4 +77,4 @@ const ClientPage = () => {
   );
 };
 
-export default ClientPage;
+export default APIClient;

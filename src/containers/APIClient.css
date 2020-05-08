@@ -5,7 +5,7 @@
   width: 55%;
 }
 
-.ClientPage {
+.APIClient {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

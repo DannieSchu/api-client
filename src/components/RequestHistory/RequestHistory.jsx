@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import RequestItem from './RequestItem.jsx';
 import { weakKey } from '../../utilities/weakKey.jsx';
 import styles from './RequestHistory.css';
-import buttonStyle from '../button.css';
+import buttonStyle from '../../css/button.css';
 
 const RequestHistory = ({ requests, onClick, onDelete }) => {
   const requestElements = requests.map(request => (

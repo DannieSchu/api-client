@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
-import ClientPage from '../../containers/ClientPage';
+import APIClient from '../../containers/APIClient';
 
 export default function App() {
   return (
     <>
       <Header />
-      <ClientPage />
+      <APIClient />
     </>
   );
 }

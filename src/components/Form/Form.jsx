@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { RadioButton } from './RadioButton.jsx';
 import { RadioButtonGroup } from './RadioButtonGroup.jsx';
 import styles from './Form.css';
-import buttonStyle from '../button.css';
+import buttonStyle from '../../css/button.css';
 
 const Form = ({
   onSubmit,
