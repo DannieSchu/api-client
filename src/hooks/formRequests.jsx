@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Form from '../components/Form/Form.jsx';
-import JsonDisplay from '../components/JsonDisplay/JsonDisplay.jsx';
-import RequestHistory from '../components/RequestHistory/RequestHistory.jsx';
+import { useState, useEffect } from 'react';
 import { apiData } from '../services/apiData.jsx';
-import styles from './APIClient.css';
 
-const APIClient = () => {
+export const useRequest = () => {
   const [method, setMethod] = useState('get');
   const [url, setUrl] = useState('');
   const [body, setBody] = useState('');
@@ -61,20 +57,5 @@ const APIClient = () => {
     setRequests([]);
   };
 
-  return (
-    <section className={styles.APIClient}>
-      <section className={styles.FormContainer}>
-        <Form
-          onSubmit={handleSubmit}
-          onChange={handleChange}
-          url={url}
-          body={body}
-          buttonText="Send" />
-        <JsonDisplay results={results} loading={loading} />
-      </section>
-      {requests && <RequestHistory requests={requests} onClick={handleClick} onDelete={handleDelete} />}
-    </section>
-  );
+  return { url, body, results, requests, loading, handleSubmit, handleChange, handleClick, handleDelete };
 };
-
-export default APIClient;

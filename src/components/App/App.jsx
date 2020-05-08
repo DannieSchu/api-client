@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
-import APIClient from '../../containers/APIClient';
+import APIClient from '../APIClient/APIClient';
 
 export default function App() {
   return (
