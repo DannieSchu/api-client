@@ -3,15 +3,17 @@
 }
 
 .fa-server {
-  color: white;
   height: 200px;
   text-align: center;
+  color: white;
 }
 
 body {
-  background-color: #e4e3e3;
-  color: rgb(70, 70, 70);
   margin: 0 auto;
+
   font-family: 'Source Code Pro', monospace;  
   font-weight: 300;
+
+  background-color: #e4e3e3;
+  color: rgb(70, 70, 70);
 }

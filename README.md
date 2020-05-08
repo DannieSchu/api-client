@@ -10,7 +10,7 @@ React, Jest, Enzyme, PostCSS, React JSON View package
 
 ## Approach
 1. Created component diagram to plan passage of props and control of state.
-   * Used only function components
+   * Used only function components.
 2. Built out each presentation component individually with snapshot tests and CSS. 
 3. Worked in vertical slices to add functionality from parent container component.
    * Maintained a functioning app as new features were added by adhering to agile methodologies.  

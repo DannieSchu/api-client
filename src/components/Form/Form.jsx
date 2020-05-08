@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { RadioButton } from './RadioButton.jsx';
 import { RadioButtonGroup } from './RadioButtonGroup.jsx';
 import styles from './Form.css';
+import buttonStyle from '../button.css';
 
 const Form = ({
   onSubmit,
@@ -23,7 +24,7 @@ const Form = ({
           value={url}
           onChange={onChange}
           placeholder="URL" />
-        <button className={styles.tealButton}>{buttonText}</button>
+        <button className={buttonStyle.tealButton}>{buttonText}</button>
       </div>
       <section>
         <RadioButtonGroup name="method" onChange={onChange}>

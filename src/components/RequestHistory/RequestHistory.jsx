@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import RequestItem from './RequestItem.jsx';
 import { weakKey } from '../../utilities/weakKey.jsx';
 import styles from './RequestHistory.css';
+import buttonStyle from '../button.css';
 
 const RequestHistory = ({ requests, onClick, onDelete }) => {
   const requestElements = requests.map(request => (
@@ -14,7 +15,7 @@ const RequestHistory = ({ requests, onClick, onDelete }) => {
   return (
     <ul className={styles.RequestHistory}>
       {requestElements}
-      <button className={styles.tealButton} onClick={onDelete}>Clear History</button>
+      <button className={buttonStyle.tealButton} onClick={onDelete}>Clear History</button>
     </ul>
   );
 };

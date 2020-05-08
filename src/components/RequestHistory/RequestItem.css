@@ -1,8 +1,8 @@
 .RequestItem {
   h3 {
+    margin: 0 auto;
     text-transform: uppercase;
     color: white;
-    margin: 0 auto;
   }
 
   p {

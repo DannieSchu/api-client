@@ -1,11 +1,12 @@
 .Header {
-  /*background-color: rgb(73, 73, 73);*/
-  background-color: #ee26cd;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   margin: 0 auto;
   padding: .8rem 4rem;
+  
   font-size: 2.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   letter-spacing: 0.05rem;
+  
+  background-color: #ee26cd;
+  color: white;
 }

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioButton matches a snapshot 1`] = `
-<Fragment>
+<div
+  className="RadioButton"
+>
   <input
     id="get"
     name="method"
@@ -14,5 +16,5 @@ exports[`RadioButton matches a snapshot 1`] = `
   >
     get
   </label>
-</Fragment>
+</div>
 `;

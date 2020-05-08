@@ -1,17 +1,3 @@
-.tealButton {
-  background-color: #08b699;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: white;
-  border-radius: .3rem;
-  border: none;
-  height: 2.5rem;
-  width: 10rem;
-  box-shadow: 3px 3px 5px 1px #ccc;
-  margin-top: 2rem;
-  letter-spacing: 0.02rem;
-}
 
 .RequestHistory {
   display: flex;

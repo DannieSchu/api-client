@@ -1,0 +1,16 @@
+.tealButton {
+  height: 2.5rem;
+  width: 7.3rem;
+    border: none;
+  border-radius: .3rem;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  
+  color: white;
+  box-shadow: 3px 3px 5px 1px #ccc;
+  background-color: #08b699;
+  cursor: pointer;
+}
