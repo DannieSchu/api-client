@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.fa-server {
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  margin: 0 auto;
+
+  font-family: 'Source Code Pro', monospace;  
+  font-weight: 300;
+
+  background-color: #e4e3e3;
+  color: rgb(70, 70, 70);
+}

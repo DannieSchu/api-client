@@ -1,0 +1,47 @@
+.Form {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 45%;
+
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  div, section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    height: 2.2rem;
+    width: 100%;
+    max-width: 60rem;
+    padding-left: 1rem;
+    margin-right: 4rem;
+    font-size: 0.8rem;
+    background-color: #fdfafa;
+  }
+
+  textarea {
+    height: 5rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #fdfafa;
+  }
+  
+  div:last-of-type {
+    margin-right: 0;
+  }
+
+  button:hover {
+    background-color: #3ec8b1;
+  }
+}

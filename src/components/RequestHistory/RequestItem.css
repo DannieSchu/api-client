@@ -1,0 +1,12 @@
+.RequestItem {
+  h3 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}
